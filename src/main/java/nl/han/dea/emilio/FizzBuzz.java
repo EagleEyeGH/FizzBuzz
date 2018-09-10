@@ -7,15 +7,15 @@ import static org.apache.commons.math3.primes.Primes.isPrime;
 public class FizzBuzz {
     public static void main (String[] args) {
         try {
-            startFizzBuzz(false);
-        } catch (FizzBuzzException fbe) {
-            System.out.println(fbe.getMessage());
-        }
+            startFizzBuzz(true);
+        } catch (FizzBuzzException exception) {
+        System.out.println(exception.getMessage());
+    }
     }
 
     private static void startFizzBuzz (boolean state) throws FizzBuzzException {
         if(state) {
-            IntStream.range(1, 1000).mapToObj(i ->
+            IntStream.range(1, 100000).mapToObj(i ->
                     (i % 15 == 0) ? "FIZZBUZZ" :
                             (i % 3 == 0) ? "FIZZ" :
                                     (i % 5 == 0) ? "Buzz" :
