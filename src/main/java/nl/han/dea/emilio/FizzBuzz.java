@@ -9,8 +9,8 @@ public class FizzBuzz {
         try {
             startFizzBuzz(true);
         } catch (FizzBuzzException exception) {
-        System.out.println(exception.getMessage());
-    }
+            System.out.println(exception.getMessage());
+        }
     }
 
     private static void startFizzBuzz (boolean state) throws FizzBuzzException {
