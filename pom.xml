@@ -76,7 +76,7 @@
           </executions>
           <configuration>
             <mainClass>nl.han.dea.emilio.FizzBuzz</mainClass>
-            <commandlineArgs>-Dexec.mainClass="App"</commandlineArgs>
+            <commandlineArgs>-Dexec.mainClass=""</commandlineArgs>
           </configuration>
         </plugin>
       </plugins>
