@@ -20,6 +20,7 @@ public class FizzBuzzTest
     }
 
     @Test
+    @DisplayName("Testing if FizzBuzz Exception is thrown")
     public void testIfFizzBuzzExceptionIsThrown() {
         assertThrows(FizzBuzzException.class, () -> {
             fizzBuzz.startFizzBuzz(false);
