@@ -1,4 +1,4 @@
-package nl.han.dea.emilio;
+package nl.han.dea.emilio.exceptions;
 
 import java.util.stream.IntStream;
 
@@ -13,7 +13,7 @@ public class FizzBuzz {
     }
     }
 
-    private static void startFizzBuzz (boolean state) throws FizzBuzzException {
+    public static void startFizzBuzz (boolean state) throws FizzBuzzException {
         if(state) {
             IntStream.range(1, 100000).mapToObj(i ->
                     (i % 15 == 0) ? "FIZZBUZZ" :

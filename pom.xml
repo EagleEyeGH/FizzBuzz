@@ -16,14 +16,14 @@
     <maven.compiler.target>1.7</maven.compiler.target>
     <coveralls.version>4.3.0</coveralls.version>
     <jacoco.version>0.8.2</jacoco.version>
+    <junit.jupiter.version>5.2.0</junit.jupiter.version>
   </properties>
 
   <dependencies>
     <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>4.11</version>
-      <scope>test</scope>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter-engine</artifactId>
+      <version>${junit.jupiter.version}</version>
     </dependency>
     <!-- https://mvnrepository.com/artifact/org.apache.commons/commons-math3 -->
     <dependency>
@@ -77,7 +77,7 @@
             </execution>
           </executions>
           <configuration>
-            <mainClass>nl.han.dea.emilio.FizzBuzz</mainClass>
+            <mainClass>nl.han.dea.emilio.exceptions.FizzBuzz</mainClass>
             <commandlineArgs>-Dexec.mainClass=""</commandlineArgs>
           </configuration>
         </plugin>
