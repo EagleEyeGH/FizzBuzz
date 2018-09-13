@@ -20,7 +20,7 @@ public class FizzBuzzTest
     }
 
     @Test
-    public void testIfFizzBuzzExceptionIsThrown() throws Exception {
+    public void testIfFizzBuzzExceptionIsThrown() {
         assertThrows(FizzBuzzException.class, () -> {
             fizzBuzz.startFizzBuzz(false);
         });
